@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Delegations" representedClassName="Delegations" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="members" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Members" inverseName="delegation" inverseEntity="Members" syncable="YES"/>
+    </entity>
+    <entity name="Members" representedClassName="Members" syncable="YES">
+        <attribute name="accelerx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accelery" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accelerz" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gravx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gravy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gravz" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gyrox" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gyroy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gyroz" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magz" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pitch" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roll" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rotx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rotz" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useraccelerx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useraccelery" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useraccelerz" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yaw" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="delegation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Delegations" inverseName="members" inverseEntity="Delegations" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Delegations" positionX="-342" positionY="-12" width="128" height="75"/>
+        <element name="Members" positionX="-54" positionY="-9" width="128" height="390"/>
+    </elements>
+</model>

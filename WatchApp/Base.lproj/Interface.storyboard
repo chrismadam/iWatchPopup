@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Type of Activity" id="DgK-EO-xYu">
+                            <connections>
+                                <action selector="selectActivity" destination="AgC-eL-Hgc" id="5TJ-sv-Ohc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Time Interval" id="D3h-mu-AwD">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="selectInterval" destination="AgC-eL-Hgc" id="aIh-8q-lsN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Start Recording" id="0BA-9e-b5m">
+                            <connections>
+                                <action selector="startRecoding" destination="AgC-eL-Hgc" id="Qyq-FH-2oG"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="activityButton" destination="DgK-EO-xYu" id="DnE-VA-jDo"/>
+                        <outlet property="intervalButton" destination="D3h-mu-AwD" id="C5j-rP-eWN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="335" y="345"/>
+        </scene>
+        <!--ActivityInterfaceController-->
+        <scene sceneID="3bp-Vx-8Fr">
+            <objects>
+                <controller identifier="ActivityInterfaceController" id="ikG-CC-Fvq" customClass="ActivityInterfaceController">
+                    <items>
+                        <button width="1" height="20.5" alignment="left" title="Sitting" id="t19-59-vof">
+                            <connections>
+                                <action selector="sittingButton" destination="ikG-CC-Fvq" id="v0E-4G-lcs"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="21.5" alignment="left" title="Running" id="aWI-QP-7tI">
+                            <connections>
+                                <action selector="runningButton" destination="ikG-CC-Fvq" id="ab5-pR-LIq"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="21.5" alignment="left" title="Standing" id="qAU-nd-LhD">
+                            <connections>
+                                <action selector="standingButton" destination="ikG-CC-Fvq" id="MPZ-az-4hP"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="22.5" alignment="left" title="Walking" id="40y-ML-6aS">
+                            <connections>
+                                <action selector="walkingButton" destination="ikG-CC-Fvq" id="jmV-kx-Rhh"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="20.5" alignment="left" title="sleeping" id="YAM-8W-DKr">
+                            <connections>
+                                <action selector="sleepingButton" destination="ikG-CC-Fvq" id="WfE-zT-JKv"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="20.5" alignment="left" title="Driving" id="AtZ-sv-Fmd">
+                            <connections>
+                                <action selector="drivingButton" destination="ikG-CC-Fvq" id="1r0-JF-ujn"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="335" y="597"/>
+        </scene>
+        <!--IntervalInterfaceController-->
+        <scene sceneID="lUl-ia-aLD">
+            <objects>
+                <controller identifier="IntervalInterfaceController" id="jbx-Hm-ZR1" customClass="IntervalInterfaceController">
+                    <items>
+                        <button width="1" height="18.5" alignment="left" title="100 times/sec" id="NKY-5N-HMr">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <connections>
+                                <action selector="times100Button" destination="jbx-Hm-ZR1" id="nMi-tR-myE"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="20.5" alignment="left" title="50 times/sec" id="8Ub-U1-cEe">
+                            <connections>
+                                <action selector="times50Button" destination="jbx-Hm-ZR1" id="Yra-Om-9fY"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="18.5" alignment="left" title="25 times/sec" id="MJe-NZ-8wj">
+                            <connections>
+                                <action selector="times25Button" destination="jbx-Hm-ZR1" id="TPi-Uw-i5T"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="21.5" alignment="left" title="10 times/sec" id="Iqu-0g-4z4">
+                            <connections>
+                                <action selector="times10Button" destination="jbx-Hm-ZR1" id="20n-Uc-xLA"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="25.5" alignment="left" title="5 times/sec" id="yWB-yB-Ddt">
+                            <connections>
+                                <action selector="times5Button" destination="jbx-Hm-ZR1" id="qqF-Fq-7Md"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="23.5" alignment="left" title="1 times/sec" id="1R5-hH-f5Y">
+                            <connections>
+                                <action selector="times1Button" destination="jbx-Hm-ZR1" id="d18-XE-KMb"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="501" y="597"/>
+        </scene>
+        <!--RecordingInterfaceController-->
+        <scene sceneID="na8-hV-b4j">
+            <objects>
+                <controller identifier="RecordingInterfaceController" id="Pmd-dR-fFu" customClass="RecordingInterfaceController">
+                    <items>
+                        <label width="136" height="17.5" alignment="left" textAlignment="center" id="Ioy-fU-8yb"/>
+                        <timer width="136" height="33.5" alignment="left" textAlignment="center" id="vIC-H5-cJ1"/>
+                        <button width="1" alignment="left" title="Stop Recording" id="AFd-o8-Drn">
+                            <connections>
+                                <action selector="stopButton" destination="Pmd-dR-fFu" id="Bsr-9u-n3X"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="activityLabel" destination="Ioy-fU-8yb" id="f8R-ux-acU"/>
+                        <outlet property="recodingTimer" destination="vIC-H5-cJ1" id="wvh-jV-IiF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="507" y="345"/>
+        </scene>
+    </scenes>
+</document>
